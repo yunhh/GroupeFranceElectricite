@@ -1,20 +1,31 @@
-<p id="notice"><%= notice %></p>
 
-<h1>Services</h1>
+<% if notice %>
+  <aside id="notice"><%= notice %></aside>
+<% end %>
+
+<%= link_to 'New Service', new_service_path %>
 
 <table>
-  <thead>
-    <tr>
-      <th>name</th>
-      <th>Description</th>
-      <th>Description2</th>
-      <th>Image url</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
   <tbody>
-    <% @services.each do |service| %>
+    <%= @services.each do |service| %>
+      <div class="card-services">
+        <!-- <div class="image"><%= image_tag(service.image_url)%></div> -->
+          <div class="card-services-infos">
+              <div class= "name">
+                <%= service.name %>
+              </div>
+              <div class= "description">
+                <p><%= sanitize(service.description) %></p>
+              </div>
+              <div class= "description2">
+                <p><%= sanitize(service.description2) %></p>
+              </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
+
+   <!--  <% @services.each do |service| %>
       <tr>
         <td><%= service.name %></td>
         <td><%= service.description %></td>
@@ -24,10 +35,6 @@
         <td><%= link_to 'Edit', edit_service_path(service) %></td>
         <td><%= link_to 'Destroy', service, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
-    <% end %>
+    <% end %> -->
   </tbody>
 </table>
-
-<br>
-
-<%= link_to 'New Service', new_service_path %>

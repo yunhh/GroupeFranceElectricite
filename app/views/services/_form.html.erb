@@ -12,18 +12,18 @@
   <% end %>
 
   <div class="field">
-    <%= form.label : name %>
-    <%= form.text_field : name %>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
   </div>
 
   <div class="field">
     <%= form.label :description %>
-    <%= form.text_area :description %>
+    <%= form.text_area :description, rows: 10, cols: 60 %>
   </div>
 
   <div class="field">
     <%= form.label :description2 %>
-    <%= form.text_area :description2 %>
+    <%= form.text_area :description2, rows: 10, cols: 60 %>
   </div>
 
   <div class="field">

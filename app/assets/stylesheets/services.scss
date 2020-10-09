@@ -1,3 +1,71 @@
 // Place all the styles related to the Services controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.card-services {
+  border: solid black 1px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  height: 500px;
+  display: flex;
+}
+
+.card-services > img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-services-infos {
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+
+// .card-services h2 {
+//   font-size: 16px;
+//   font-weight: bold;
+//   margin: 0;
+// }
+
+// .card-services p {
+//   font-size: 12px;
+//   opacity: .7;
+//   margin: 0;
+// }
+
+.description {
+  border: solid black 2px;
+  height: 200px;
+  width: 200px;
+  flex-wrap: wrap;
+  font-size: 30px;
+  margin-right: 100px;
+  margin-left: -500px;
+  margin-top: 300px;
+  margin-bottom: 20px;
+  font-color: black;
+}
+
+.name {
+  font-size: 30px;
+  font-weight: bold;
+  padding-left: 650px;
+  padding-top: 260px;
+  flex-wrap: wrap;
+
+}
+
+
+.description2 {
+  border: solid black 2px;
+  height: 200px;
+  width: 200px;
+  font-size: 40px;
+  margin-top: 300px;
+  margin-left: 100px;
+  margin-bottom: 20px;
+  font-color: black;
+}
