@@ -1,71 +1,528 @@
 // Place all the styles related to the Services controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
-.card-services {
-  border: solid black 1px;
-  overflow: hidden;
-  background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  height: 500px;
+header {
   display: flex;
+  height: 500px;
+  background-color: #D6d2c4;
 }
 
-.card-services > img {
+.banner-text p {
+  text-align: center;
+  font-size: 30px;
+  line-height: 35px;
+  padding-top: 40px;
+}
+
+.slogan{
+  flex-wrap: wrap;
+  text-align: center;
+  font-size: 50px;
   height: 200px;
+}
+
+.slogan h1 {
+  font-size:  50px;
+  color: #0278ae;
+  padding-top: 30px;
+}
+
+.slogan p {
+  font-size: 30px;
+  padding-top: 30px;
+  color: red;
+}
+
+.card-services {
+  border: solid white 1px;
+  //background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  height: 900px;
+  width: 100%;
+}
+
+// .card-services > img {
+//   height: 300px;
+//   width: 100%;
+//   object-fit: cover;
+//   position: absolute;
+//   z-index: 1;
+//   opacity: 0.8;
+// }
+
+.image {
+  height: 300px;
   width: 100%;
   object-fit: cover;
+  //position: absolute;
+  z-index: 1;
 }
 
 .card-services-infos {
   display: flex;
-  flex-direction: column;
-  // justify-content: space-around;
-  flex-wrap: wrap;
-
+  // flex-wrap: wrap;
+  flex-direction: inline;
 }
 
-// .card-services h2 {
-//   font-size: 16px;
-//   font-weight: bold;
-//   margin: 0;
-// }
+.card-services h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 1px, 2px, 2px, 2px;
+  text-align: center;
+  margin-left: 100px;
+}
 
 // .card-services p {
 //   font-size: 12px;
 //   opacity: .7;
 //   margin: 0;
+//   padding-left: 2px;
+//   padding-right: 2px;
 // }
 
 .description {
   border: solid black 2px;
-  height: 200px;
-  width: 200px;
-  flex-wrap: wrap;
+  height: 300px;
+  width: 250px;
   font-size: 30px;
-  margin-right: 100px;
-  margin-left: -500px;
-  margin-top: 300px;
-  margin-bottom: 20px;
+  margin-right: 200px;
+  margin-left: -550px;
+  margin-top: 150px;
+  margin-bottom: 50px;
   font-color: black;
+  background-color: #0278ae;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.7);
+  z-index: 2;
+}
+
+.description p {
+  font-size: 20px;
+  padding: 20px 2px 2px 2px;
+  color: black;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .name {
   font-size: 30px;
   font-weight: bold;
-  padding-left: 650px;
-  padding-top: 260px;
-  flex-wrap: wrap;
-
+  margin-left: 600px;
+  text-align: center;
+  padding-top: 10px;
+  // flex-wrap: wrap;
+  z-index: 2;
 }
 
 
 .description2 {
   border: solid black 2px;
+  height: 300px;
+  width: 250px;
+  font-size: 40px;
+  margin-top: 150px;
+  margin-left: 150px;
+  margin-bottom: 50px;
+  font-color: black;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.7);
+  flex-wrap: wrap;
+  background-color: red;
+  z-index: 2;
+}
+
+.description2 p {
+  font-size: 20px;
+  padding: 20px 2px 2px 2px;
+  color: black;
+  text-align: center;
+  margin-top: 40px;
+  z-index: 3;
+}
+
+.lien-dépannage {
+  margin-top: 220px;
+  margin-left: 170px;
+  font-size: 20px;
+  line-height: 30px;
+  color: blue;
+}
+
+.lien-dépannage a {
+  text-decoration: none;
+}
+
+.lien-rénovation {
+  margin-top: 220px;
+  margin-left: 170px;
+  font-size: 20px;
+  line-height: 30px;
+  color: blue;
+}
+
+.lien-rénovation a {
+  text-decoration: none;
+}
+
+.name-conformité {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 550px;
+  text-align: center;
+  padding-top: 10px;
+  line-height: 30px;
+  // flex-wrap: wrap;
+  z-index: 2;
+}
+
+.description-conformité {
+  border: solid black 2px;
+  height: 300px;
+  width: 250px;
+  font-size: 30px;
+  margin-right: 200px;
+  margin-left: -600px;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  font-color: black;
+  background-color: #0278ae;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.7);
+  z-index: 2;
+}
+
+.description-conformité p {
+  font-size: 20px;
+  padding: 20px 2px 2px 2px;
+  color: black;
+  text-align: center;
+  margin-top: 20px;
+
+}
+
+.description2-conformité {
+  border: solid black 2px;
+  height: 300px;
+  width: 250px;
+  font-size: 40px;
+  margin-top: 150px;
+  margin-left: 150px;
+  margin-bottom: 50px;
+  font-color: black;
+  border-radius: 10px;
+  background-color: red;
+  box-shadow: 0 0 20px rgba(0,0,0,0.7);
+  flex-wrap: wrap;
+  z-index: 2;
+}
+
+.description2-conformité p {
+  font-size: 20px;
+  padding: 20px 2px 2px 2px;
+  color: black;
+  text-align: center;
+  margin-top: 40px;
+  z-index: 3;
+}
+
+.lien-conformité {
+  margin-top: 220px;
+  margin-left: 150px;
+  font-size: 20px;
+  line-height: 30px;
+  color: blue;
+}
+
+.lien-conformité a {
+  text-decoration: none;
+}
+
+.name-portail {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 450px;
+  text-align: center;
+  padding-top: 5px;
+  line-height: 35px;
+  // flex-wrap: wrap;
+
+}
+
+.description-portail {
+  border: solid black 2px;
+  height: 300px;
+  width: 350px;
+  font-size: 30px;
+  margin-right: 180px;
+  margin-left: -900px;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  font-color: black;
+  background-color: #0278ae;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.7);
+  z-index: 2;
+}
+
+.description-portail p {
+  font-size: 20px;
+  padding: 2px 2px 2px 2px;
+  color: black;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.description2-portail {
+  border: solid black 2px;
+  height: 300px;
+  width: 250px;
+  font-size: 40px;
+  margin-top: 150px;
+  margin-left: 150px;
+  margin-bottom: 50px;
+  font-color: black;
+  border-radius: 10px;
+  background-color: red;
+  box-shadow: 0 0 20px rgba(0,0,0,0.7);
+  flex-wrap: wrap;
+  z-index: 2;
+}
+
+.description2-portail p {
+  font-size: 20px;
+  padding: 2px 2px 2px 2px;
+  color: black;
+  text-align: center;
+  margin-top: 40px;
+  z-index: 3;
+}
+.lien-portail {
+  margin-top: 220px;
+  margin-left: 170px;
+  font-size: 20px;
+  line-height: 30px;
+  color: blue;
+  vertical-align: middle;
+}
+
+.lien-portail a {
+  text-decoration: none;
+}
+.a link {
+  text-decoration: none;
+}
+
+.lien-domotique {
+  margin-top: 230px;
+  margin-left: 130px;
+  font-size: 20px;
+  line-height: 30px;
+  color: blue;
+
+}
+
+.lien-domotique a {
+  text-decoration: none;
+}
+
+.description-climatisation {
+  border: solid black 2px;
+  height: 300px;
+  width: 250px;
+  font-size: 30px;
+  margin-right: 200px;
+  margin-left: -600px;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  font-color: black;
+  background-color: #0278ae;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.7);
+  z-index: 2;
+}
+
+.description-climatisation p {
+  font-size: 20px;
+  padding: 20px 2px 2px 2px;
+  color: black;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.description2-climatisation {
+  border: solid black 2px;
+  height: 300px;
+  width: 300px;
+  font-size: 40px;
+  margin-top: 150px;
+  margin-left: 150px;
+  margin-bottom: 50px;
+  font-color: black;
+  border-radius: 10px;
+  background-color: red;
+  box-shadow: 0 0 20px rgba(0,0,0,0.7);
+  flex-wrap: wrap;
+  z-index: 2;
+}
+
+.description2-climatisation p {
+  font-size: 20px;
+  padding: 20px 2px 2px 2px;
+  color: black;
+  text-align: center;
+  margin-top: 10px;
+  z-index: 3;
+}
+
+.lien-climatisation {
+  margin-top: 220px;
+  margin-left: 150px;
+  font-size: 20px;
+  line-height: 30px;
+  color: blue;
+  text-decoration: none;
+}
+
+.lien-climatisation a {
+  text-decoration: none;
+}
+
+.name-alarme {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 530px;
+  text-align: center;
+  padding-top: 10px;
+  // flex-wrap: wrap;
+  line-height: 35px;
+  z-index: 2;
+}
+
+.description-alarme {
+  border: solid black 2px;
+  height: 350px;
+  width: 400px;
+  font-size: 30px;
+  margin-right: 100px;
+  margin-left: -700px;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  font-color: black;
+  background-color: #0278ae;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.7);
+  z-index: 2;
+}
+
+.description-alarme p {
+  font-size: 20px;
+  padding: 20px 2px 2px 2px;
+  color: black;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.description2-alarme {
+  border: solid black 2px;
+  height: 400px;
+  width: 600px;
+  font-size: 40px;
+  margin-top: 150px;
+  margin-left: 150px;
+  margin-bottom: 50px;
+  font-color: black;
+  border-radius: 10px;
+  background-color: red;
+  box-shadow: 0 0 20px rgba(0,0,0,0.7);
+  flex-wrap: wrap;
+  z-index: 2;
+}
+
+.description2-alarme p {
+  font-size: 20px;
+  padding: 2px 2px 2px 2px;
+  color: black;
+  text-align: center;
+  // margin-top: 20px;
+  z-index: 3;
+}
+
+.lien-alarme {
+  margin-top: 220px;
+  margin-left: 100px;
+  font-size: 20px;
+  line-height: 30px;
+  color: blue;
+}
+
+.lien-alarme a {
+  text-decoration: none;
+}
+
+.lien a :over {
+  text-decoration: none;
+}
+
+footer {
+  background-color: #D6d2c4;
+  height: 500px;
+}
+
+.petit-logo {
   height: 200px;
   width: 200px;
-  font-size: 40px;
-  margin-top: 300px;
-  margin-left: 100px;
-  margin-bottom: 20px;
-  font-color: black;
+  justify-content: center;
+  margin-left: 800px;
+}
+
+.services-footer li{
+ display: inline;
+ margin-right: 20px;
+ margin-left: 200px;
+ padding-right: 30px;
+ line-height: 50px;
+ text-align: center;
+}
+
+.services2-footer li{
+  display: inline;
+  margin-right: 20px;
+  margin-left: 400px;
+  padding-right: 30px;
+  text-align: center;
+
+}
+
+.separateur {
+  margin-top: 50px;
+  border-bottom: solid grey 1px;
+}
+
+.footer-contact h3{
+  //margin-left: 800px;
+  text-align: center;
+}
+
+.footer-contact p {
+  display: inline;
+  margin-left: 500px;
+  font-weight: bold;
+}
+
+.footer-contact a{
+  text-align: center;
+  justify-content: center;
+  margin-left: 815px;
+  margin-bottom: 30px;
+  line-height: 50px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nonSelectionnable
+{
+ -moz-user-select: none; /* Firefox */
+ -webkit-user-select: none; /* Chrome, Safari, Opéra depuis la version 15 */
+ -ms-user-select: none; /* Internet explorer depuis la version 10 et Edge */
+ user-select: none; /* Propriété standard */
 }

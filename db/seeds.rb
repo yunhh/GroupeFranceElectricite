@@ -5,11 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-service.delete_all
 
-service.create!(name: "Dépannage",
+@service.create!(name: "Dépannage",
   description:
-  %{<p><em>Dépannage 24H/24 7/7<em> Vous avez une panne électrique ? Une urgence en électricité ? Vos luminaires, vos prises ou votre chauffe-eau ne fonctionnent plus ? Pas de panique ! France-Électricité se charge de tout !</p>},
+  %{<h2><em>Dépannage 24H/24 7/7<em><h2>
+    <p> Vous avez une panne électrique ? Une urgence en électricité ? Vos luminaires, vos prises ou votre chauffe-eau ne fonctionnent plus ? Pas de panique ! France-Électricité se charge de tout !</p>},
   description2:
   %{<p>Nous intervenons sur l'ensemble de l'agglomération bordelaise</p>},
   image_url: "depannge.jpg",
