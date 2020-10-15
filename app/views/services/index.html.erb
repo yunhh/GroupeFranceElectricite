@@ -1,19 +1,193 @@
-<p id="notice"><%= notice %></p>
 
-<h1>Services</h1>
+<% if notice %>
+  <aside id="notice"><%= notice %></aside>
+<% end %>
+
+<head>
+  <!-- Google result text-->
+  <title>Groupe France électricité</title>
+  <!-- Google result description-->
+  <meta name="description-site" content="Dépannage électrique 24h/24 7j/7. Le groupe France électricité vous apportent des solutions de qualités et adaptées à vos projets. Il vous suffit simplement de nous confier votre projet et nous ferons de notre mieux pour vous guider et vous conseiller. Nous assurons un service après-vente de qualité. Fiers de notre métier, nous faisons tout ce qui est en notre pouvoir pour préserver notre bonne réputation et obtenir votre entière satisfaction.
+  Nous intervenons sur l'ensemble de l'agglomération Bordelaise? Nous vous proposons des rénovations, mise en conformité, domotique, alarme et vidéosurveillance, climatisation.">
+</head>
+
+
+<header>
+  <div class= "banner-text">
+    <p>Les électriciens de l'entreprise Groupe France Electricité vous apportent des solutions de qualités et adaptées à vos projets. Il vous suffit simplement de nous confier votre projet et nous ferons de notre mieux pour vous guider et vous conseiller. Nous assurons un service après-vente de qualité. Fiers de notre métier, nous faisons tout ce qui est en notre pouvoir pour préserver notre bonne réputation et obtenir votre entière satisfaction.</p>
+  </div>
+  <img src="<%= image_path("grand-logo.png")%>">
+</header>
 
 <table>
-  <thead>
-    <tr>
-      <th>name</th>
-      <th>Description</th>
-      <th>Description2</th>
-      <th>Image url</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
   <tbody>
+  <div class= "slogan">
+    <h1>Notre slogan</h1>
+    <p>Groupe France Electricité, un service de qualité.</p>
+  </div>
+      <div class="card-services">
+        <img class= "image"
+         src= "<%= image_path("dépannage.jpg")%>">
+          <div class="card-services-infos">
+              <div class= "name">
+                <h2> Dépannage</h2>
+              </div>
+              <div class= "description">
+                <p>Vous avez une panne électrique ?<br> Une urgence en électricité ?<br> Vos luminaires, vos prises ou votre chauffe-eau ne fonctionnent plus ? </p>
+              </div>
+              <div class= "description2">
+                <p>Pas de panique ! France-Électricité se charge de tout !<br> Nous intervenons sur l'ensemble de l'agglomération bordelaise</p>
+              </div>
+              <div class= "lien-dépannage">
+                <a href="">Besoin d'un dépannage ?<br>Contactez nos techniciens</a>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-services">
+        <img class= "image" src= "<%= image_path("rénovation.jpg")%>">
+          <div class="card-services-infos">
+              <div class= "name">
+                <h2> Rénovation</h2>
+              </div>
+              <div class= "description">
+                <p><em><strong>Rénovation des installations électriques</strong></em><br><br>
+                Une rénovation de l'installation électrique est vivement recommandée si aucune mise aux normes n'a été effectuée durant les 25 dernières années dans votre logement.</p>
+              </div>
+              <div class= "description2">
+                <p>En effet, les maisons ou appartements anciens n'ont pas été prévus pour alimenter en électricité autant d'appareils électriques que ceux que nous utilisons aujourd'hui.</p>
+              </div>
+              <div class= "lien-rénovation">
+                <a href="">Besoin d'une rénovation ?<br>Contactez nos techniciens</a>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-services">
+        <img class= "image" src= "<%= image_path("conformité.jpg")%>">
+          <div class="card-services-infos">
+              <div class= "name-conformité">
+                <h2> Mise en conformité</h2>
+              </div>
+              <div class= "description-conformité">
+                <p><em><strong>Mise en conformité électrique</em></strong><br><br>
+                La mise en conformité a pour but de rendre une installation conforme à la norme NF C 15-100 en vigueur, dont le respect est exigé lors de la construction ou de la rénovation totale d'un logement.</p>
+              </div>
+              <div class= "description2-conformité">
+                <p>En effet, les maisons ou appartements anciens n'ont pas été prévus pour alimenter en électricité autant d'appareils électriques que ceux que nous utilisons aujourd'hui.</p>
+              </div>
+              <div class= "lien-conformité">
+                <a href="">Besoin d'une conformité électrique ?<br>Contactez nos techniciens</a>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-services">
+        <img class= "image" src= "<%= image_path("portail.jpg")%>">
+          <div class="card-services-infos">
+              <div class= "name-portail">
+                <h2>Installation de portail électrique</h2>
+              </div>
+              <div class= "description-portail">
+                <p><em><strong>Installation de motorisation de portail automatique</strong></em><br><br>
+                Premier élément de votre propriété perceptible depuis la rue, le portail a pour première fonction d’assurer la liaison entre l’extérieur et l’intérieur. Il constitue l’entrée pour les véhicules. En fonction de la taille du lot, il peut remplacer le portillon qui sert d’entrée pour les personnes.</p>
+              </div>
+              <div class= "description2-portail">
+                <p>Le prix de la pose d'un portail va dépendre du type d'ouverture, du matériau du portail et des éventuels travaux à prévoir, notamment dans le cadre du remplacement d'un ancien portail.</p>
+              </div>
+              <div class= "lien-portail">
+                <a href="">Besoin d'une installation<br> de portail électrique?<br>Contactez nos techniciens</a>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-services">
+        <img class= "image" src= "<%= image_path("domotique.jpg")%>">
+          <div class="card-services-infos">
+              <div class= "name">
+                <h2>Domotique</h2>
+              </div>
+              <div class= "description">
+                <p><em><strong>Domotique</strong></em><br><br>
+                Un des buts premiers de la domotique, si ce n’est ce pour quoi elle a été créée, c’est sans doute le fait de gagner en confort. Ce confort à la maison, s’obtient avec toute sorte d’automatismes et d’équipements.</p>
+              </div>
+              <div class= "description2">
+                <p>Ce sont des choses simples du quotidien, qui d’un coup deviennent automatiques et transparentes pour nous, créant alors un confort fort agréable qu’il devient compliquer de se passer par la suite.</p>
+              </div>
+              <div class= "lien-domotique">
+                <a href="">Besoin d'une installation domotique ?<br>Contactez nos techniciens</a>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-services">
+        <img class= "image" src= "<%= image_path("Climatisation.jpg")%>">
+          <div class="card-services-infos">
+              <div class= "name">
+                <h2>Climatisation</h2>
+              </div>
+              <div class= "description-climatisation">
+                <p><em><strong>Climatisation</strong></em><br><br>
+                Grâce à notre expérience dans le domaine de la climatisation, nous sommes en mesure de proposer des solutions ultra confortables, éco-énergétiques et fiables.</p>
+              </div>
+              <div class= "description2-climatisation">
+                <p>Dans une maison individuelle, l’installation d’un climatiseur monobloc ne nécessite aucune réglementation. Par contre, pour une climatisation monosplit ou multisplit, dans la mesure où l’unité extérieure est fixée au mur, il est nécessaire d’effectuer préalablement une déclaration de travaux auprès du service urbanisme de la mairie.</p>
+              </div>
+              <div class= "lien-climatisation">
+                <a href="">Besoin d'une climatisation ?<br>Contactez nos techniciens</a>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-services-alarme">
+        <img class= "image" src= "<%= image_path("alarme.jpg")%>">
+          <div class="card-services-infos">
+              <div class= "name-alarme">
+                <h2>Alarme et vidéosurveillance</h2>
+              </div>
+              <div class= "description-alarme">
+                <p><em><strong>Quel Alarme choisir ?</strong></em><br><br>
+                En appartement, privilégiez une alarme avec une sirène intérieure car un grand nombre de copropriétés interdisent les sirènes extérieures. Si l'appartement est en rez-de-chaussée, prévoyez de bien protéger les portes et fenêtres.</p>
+              </div>
+              <div class= "description2-alarme">
+                <p><em><strong>Comment bien choisir sa vidéo surveillance ?</strong></em><br><br>
+                Le système est-il dédié à la vidéo-surveillance d’une habitation, d’un commerce ?<br> Quelle est la surface à filmer ? <br>La vidéo-surveillance doit être continue ou ponctuelle ?<br> Le système d'alarme sera-t-il filaire ou sans fil ?<br> Numérique ou analogique ?<br> Combien de caméras et de quel type ? <br>Caméras IP, infrarouges, motorisées, à détection de mouvement ?<br> Quels sont les besoins en matière de stockage et de consultation des vidéos ?.</p>
+              </div>
+              <div class= "lien-alarme">
+                <a href=""> Besoin d'un système de surveillance ?<br> Contactez nos techniciens</a>
+              </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <img class= "petit-logo" src="<%= image_path("petit-logo.png")%>">
+        <ul class= "services-footer">
+          <li>Dépannage</li>
+          <li>Rénovation électrique</li>
+          <li>Mise en conformité électrique</li>
+          <li>Domotique</li><br>
+        </ul>
+        <ul class= "services2-footer">
+          <li>Alarme/vidéo surveillance</li>
+          <li>Installation portail électrique</li>
+        </ul>
+
+        <div class= "separateur"></div>
+        <div class= "footer-contact">
+          <h3>Contactez-nous</h3>
+          <p>Téléphone: 06.77.42.43.66</p>
+          <p>Téléphone: 06.84.38.15.78</p><br>
+        <a href="">Fomulaire de contact</a><br>
+        </div>
+      </footer>
+
+
     <% @services.each do |service| %>
       <tr>
         <td><%= service.name %></td>
@@ -27,7 +201,3 @@
     <% end %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to 'New Service', new_service_path %>
